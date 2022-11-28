@@ -7,18 +7,22 @@
 }
 
 body {
-    background-color: rgb(117, 139, 157);
+    background-color: rgb(97, 22, 218);
     font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding: 20px;
+    color: whitesmoke;
+}
+
+.navbar h1 {
     color: whitesmoke;
 }
 
@@ -29,6 +33,11 @@ body {
 
 .nav-links li {
     margin: 0px 30px;
+}
+
+.nav-links li:last-child {
+    margin: 0px 0px;
+    margin-left: 300px;
 }
 
 .nav-links li a {
@@ -45,11 +54,17 @@ body {
     display: none;
 }
 
+@media only screen and (max-width:1200px) {
+    .nav-links li:last-child {
+        margin-left: 100px;
+    }
+}
+
 @media only screen and (max-width:992px) {
     .navbar {
         padding: 0px;
-        color: rgb(64, 190, 235);
-        background-color: rgb(11, 11, 11);
+        color: rgb(255, 255, 255);
+        background-color: rgb(97, 22, 218);
     }
 
     .logo {
@@ -61,29 +76,35 @@ body {
     .nav-links {
         flex-direction: column;
         width: 100%;
-        height: 400px;
-        justify-content: center;
-        background-color: black;
-        transition: all 0.5s ease;
-        margin-top: -1000px;
+        height: 100vh;
+        justify-content: space-evenly;
+        background-color: rgb(97, 22, 218);
+        transition: all 0.3s ease;
+        margin-top: -700px;
     }
 
     .toggle.nav-links {
         flex-direction: column;
         width: 100%;
-        height: 400px;
-        justify-content: center;
-        background-color: black;
+        height: 100vh;
+        justify-content: space-evenly;
+        background-color: rgb(97, 22, 218);
         margin-top: 100px;
     }
 
     .nav-links li {
-        margin: 20px auto;
+        margin: -30px auto;
         font-size: 20px;
+
+    }
+
+    .nav-links li:last-child {
+        margin: 20px 0px;
+        margin-top: -30px;
     }
 
     .nav-links li a {
-        color: rgb(64, 190, 235);
+        color: rgb(255, 255, 255);
     }
 
     .humberger-menu {
@@ -100,7 +121,7 @@ body {
 .humberger-menu .ham {
     width: 100%;
     height: 3px;
-    background-color: rgb(64, 190, 235);
+    background-color: rgb(252, 252, 252);
     margin: 5px auto;
     border-radius: 20px;
 }
