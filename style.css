@@ -14,12 +14,13 @@ body {
 .navbar {
     position: absolute;
     top: 0px;
-    left: px;
+    left: 0px;
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding: 20px;
     color: whitesmoke;
+
 }
 
 .navbar h1 {
@@ -50,21 +51,25 @@ body {
     border-radius: 30px;
 }
 
+.ctn:hover {
+    background-color: rgb(243, 88, 137);
+}
+
 .humberger-menu {
     display: none;
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:992px) {
     .nav-links li:last-child {
-        margin-left: 100px;
+        margin-left: 20px;
     }
 }
 
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:768px) {
     .navbar {
         padding: 0px;
         color: rgb(255, 255, 255);
-        background-color: rgb(97, 22, 218);
+        background-color: rgb(218, 91, 22);
     }
 
     .logo {
@@ -76,31 +81,33 @@ body {
     .nav-links {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         justify-content: space-evenly;
         background-color: rgb(97, 22, 218);
         transition: all 0.3s ease;
-        margin-top: -700px;
+        margin-top: -1000px;
+        z-index: 100;
+
+
     }
 
     .toggle.nav-links {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
-        justify-content: space-evenly;
-        background-color: rgb(97, 22, 218);
+        height: 80vh;
+        justify-content: space-around;
+        background-color: rgb(31, 6, 59);
         margin-top: 100px;
+        z-index: 100;
     }
 
     .nav-links li {
-        margin: -30px auto;
         font-size: 20px;
-
+        margin-bottom: -200px;
     }
 
     .nav-links li:last-child {
-        margin: 20px 0px;
-        margin-top: -30px;
+        margin: 10px auto;
     }
 
     .nav-links li a {
@@ -115,6 +122,7 @@ body {
         top: 34px;
         right: 30px;
         cursor: pointer;
+        z-index: 101;
     }
 }
 
@@ -124,4 +132,19 @@ body {
     background-color: rgb(252, 252, 252);
     margin: 5px auto;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.humberger-menu .ham.ham1.tog {
+    transform: rotateZ(-45deg) translate(3px, 4px);
+    margin-top: 8px;
+}
+
+.humberger-menu .ham.ham2.tog {
+    display: none;
+}
+
+.humberger-menu .ham.ham3.tog {
+    transform: rotateZ(45deg) translate(-1px, -8px);
+    margin-top: 5px;
 }
