@@ -4,10 +4,10 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    /* border: 1px solid red; */
 }
 
 body {
-    background-color: rgb(97, 22, 218);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -19,8 +19,10 @@ body {
     width: 100%;
     justify-content: space-between;
     padding: 20px;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
     color: whitesmoke;
-
 }
 
 .navbar h1 {
@@ -38,7 +40,7 @@ body {
 
 .nav-links li:last-child {
     margin: 0px 0px;
-    margin-left: 300px;
+    margin-left: 200px;
 }
 
 .nav-links li a {
@@ -59,6 +61,59 @@ body {
     display: none;
 }
 
+.jumbotron img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    width: 100%;
+    margin: 80% 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+}
+
+.row img {
+    width: 90%;
+    height: 50vh;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .row {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 3vmin;
+    margin: 20px auto;
+}
+
+p {
+    margin: 0px 40px;
+}
+
+.events .ctn {
+    margin-top: 30px;
+    color: whitesmoke;
+}
+
 @media only screen and (max-width:992px) {
     .nav-links li:last-child {
         margin-left: 20px;
@@ -71,49 +126,42 @@ body {
         color: rgb(255, 255, 255);
         background-color: rgb(218, 91, 22);
     }
-
     .logo {
         position: absolute;
         top: 30px;
         left: 30px;
     }
-
     .nav-links {
         flex-direction: column;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         justify-content: space-evenly;
         background-color: rgb(97, 22, 218);
         transition: all 0.3s ease;
         margin-top: -1000px;
         z-index: 100;
-
-
     }
-
     .toggle.nav-links {
         flex-direction: column;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         justify-content: space-around;
         background-color: rgb(31, 6, 59);
         margin-top: 100px;
         z-index: 100;
     }
-
     .nav-links li {
         font-size: 20px;
-        margin-bottom: -200px;
+        margin-bottom: -300px;
+        margin-top: -200px;
     }
-
     .nav-links li:last-child {
         margin: 10px auto;
+        margin-top: -200px;
     }
-
     .nav-links li a {
         color: rgb(255, 255, 255);
     }
-
     .humberger-menu {
         display: block;
         position: absolute;
@@ -147,4 +195,14 @@ body {
 .humberger-menu .ham.ham3.tog {
     transform: rotateZ(45deg) translate(-1px, -8px);
     margin-top: 5px;
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
 }
