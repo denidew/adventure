@@ -20,8 +20,6 @@ body {
     justify-content: space-between;
     padding: 20px;
     padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
     color: whitesmoke;
 }
 
@@ -205,4 +203,21 @@ section {
 .title {
     text-align: center;
     font-size: 4vmin;
+}
+
+.row img {
+    height: 40vh;
+}
+
+.row {
+    display: block;
+}
+
+.row .col {
+    margin-bottom: 50px;
+}
+
+p {
+    margin: 0px 20px;
+    text-align: center;
 }
