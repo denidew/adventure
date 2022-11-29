@@ -199,4 +199,8 @@ p {
     .row .col {
         margin-bottom: 30px;
     }
+    .row img {
+        width: 90%;
+        height: 40vh;
+    }
 }
