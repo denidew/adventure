@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    /* background-color: blue; */
 }
 
 .navbar {
@@ -78,9 +79,41 @@ li.ctn:hover::after {
 
 .jumbotron img {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
+    margin-top: -145px;
     background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.jumbotron h1,
+h3 {
+    color: whitesmoke;
+    position: relative;
+    top: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 70px;
+    font-weight: 700
+}
+
+.jumbotron h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.ctnj {
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    top: 50%;
+    margin-top: 100px;
+    color: whitesmoke;
+    padding: 8px 15px;
+    background-color: rgb(240, 44, 106);
+    border-radius: 30px;
 }
 
 section {
@@ -205,6 +238,26 @@ p {
     .humberger-menu .ham.ham3.tog {
         transform: rotateZ(45deg) translate(-1px, -8px);
         margin-top: 5px;
+    }
+    .jumbotron img {
+        margin-top: -80px;
+    }
+    .jumbotron h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .jumbotron h3 {
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        margin-top: -70px;
+    }
+    .ctnj {
+        left: 50%;
+        margin-left: -60px;
+        top: 50%;
+        margin-top: 50px;
     }
     section {
         width: 100%;
