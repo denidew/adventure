@@ -169,6 +169,10 @@ p {
 }
 
 @media only screen and (max-width:992px) {
+    .nav-links li {
+        margin: 0px 20px;
+    }
+
     .nav-links li:last-child {
         margin-left: 20px;
     }
