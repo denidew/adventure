@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* background-color: blue; */
+    /* background-color: rgb(178, 40, 243); */
 }
 
 .navbar {
@@ -77,44 +77,50 @@ li.ctn:hover::after {
     display: none;
 }
 
-.jumbotron img {
-    width: 100%;
-    height: 105vh;
-    margin-top: -145px;
+.jumbotron {
+    background-image: url(img/header-bg.png);
     background-size: cover;
-}
-
-.jumbotron h1,
-h3 {
-    color: whitesmoke;
-    position: relative;
-    top: 250px;
-    display: flex;
-    justify-content: center;
+    background-position: bottom;
+    max-width: 100%;
+    height: 100vh;
     text-align: center;
 }
 
+.text {
+    padding-top: 200px;
+}
+
 .jumbotron h1 {
-    font-size: 70px;
-    font-weight: 700
+    font-size: 80px;
+    color: whitesmoke;
 }
 
 .jumbotron h3 {
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 17px;
+    color: whitesmoke;
+    font-weight: 600;
+    letter-spacing: 4px;
 }
 
-.ctnj {
-    position: absolute;
-    left: 50%;
-    margin-left: -70px;
-    top: 50%;
-    margin-top: 100px;
+.jumbotron h4 {
+    font-size: 14px;
     color: whitesmoke;
+    letter-spacing: 2px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+
+.text a {
     padding: 8px 15px;
     background-color: rgb(240, 44, 106);
     border-radius: 30px;
+    color: whitesmoke;
 }
+
+.ctn:hover {
+    background-color: rgb(243, 88, 137);
+}
+
 
 section {
     width: 80%;
@@ -166,6 +172,42 @@ p {
     .nav-links li:last-child {
         margin-left: 20px;
     }
+
+    .text {
+        padding-top: 120px;
+    }
+
+    .jumbotron h1 {
+        font-size: 35px;
+        color: whitesmoke;
+    }
+
+    .jumbotron h3 {
+        font-size: 12px;
+        color: whitesmoke;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    .jumbotron h4 {
+        font-size: 14px;
+        color: whitesmoke;
+        letter-spacing: 1px;
+        margin-top: -5px;
+        margin-bottom: 35px;
+    }
+
+    .text a {
+        padding: 8px 15px;
+        background-color: rgb(240, 44, 106);
+        border-radius: 30px;
+        color: whitesmoke;
+    }
+
+    .ctn:hover {
+        background-color: rgb(243, 88, 137);
+    }
+
 }
 
 @media only screen and (max-width:768px) {
@@ -174,11 +216,13 @@ p {
         color: rgb(255, 255, 255);
         background-color: rgb(218, 91, 22);
     }
+
     .logo {
         position: absolute;
         top: 30px;
         left: 30px;
     }
+
     .nav-links {
         flex-direction: column;
         width: 100%;
@@ -189,6 +233,7 @@ p {
         margin-top: -1000px;
         z-index: 100;
     }
+
     .toggle.nav-links {
         flex-direction: column;
         width: 100%;
@@ -198,18 +243,22 @@ p {
         margin-top: 100px;
         z-index: 100;
     }
+
     .nav-links li {
         font-size: 20px;
         margin-bottom: -250px;
         margin-top: -150px;
     }
+
     .nav-links li:last-child {
         margin: 10px auto;
         margin-top: -150px;
     }
+
     .nav-links li a {
         color: rgb(255, 255, 255);
     }
+
     .humberger-menu {
         display: block;
         position: absolute;
@@ -220,6 +269,7 @@ p {
         cursor: pointer;
         z-index: 101;
     }
+
     .humberger-menu .ham {
         width: 100%;
         height: 3px;
@@ -228,49 +278,67 @@ p {
         border-radius: 20px;
         transition: all 0.3s;
     }
+
     .humberger-menu .ham.ham1.tog {
         transform: rotateZ(-45deg) translate(3px, 4px);
         margin-top: 8px;
     }
+
     .humberger-menu .ham.ham2.tog {
         display: none;
     }
+
     .humberger-menu .ham.ham3.tog {
         transform: rotateZ(45deg) translate(-1px, -8px);
         margin-top: 5px;
     }
-    .jumbotron img {
-        margin-top: -80px;
+
+    .text {
+        padding-top: 200px;
     }
+
     .jumbotron h1 {
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 50px;
+        font-size: 35px;
+        color: whitesmoke;
     }
+
     .jumbotron h3 {
-        font-size: 19px;
+        font-size: 12px;
+        color: whitesmoke;
         font-weight: 400;
-        margin-bottom: 20px;
-        margin-top: -70px;
+        letter-spacing: 2px;
     }
-    .ctnj {
-        left: 50%;
-        margin-left: -60px;
-        top: 50%;
-        margin-top: 50px;
+
+    .jumbotron h4 {
+        font-size: 14px;
+        color: whitesmoke;
+        letter-spacing: 1px;
+        margin-top: -5px;
+        margin-bottom: 50px;
     }
+
+    .text a {
+        padding: 8px 15px;
+        background-color: rgb(240, 44, 106);
+        border-radius: 30px;
+        color: whitesmoke;
+    }
+
+    .ctn:hover {
+        background-color: rgb(243, 88, 137);
+    }
+
     section {
         width: 100%;
         text-align: center;
     }
+
     .row {
         display: block;
     }
+
     .row .col {
         margin-bottom: 30px;
     }
-    .row img {
-        width: 90%;
-        height: 40vh;
-    }
+
 }
