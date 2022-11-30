@@ -149,7 +149,7 @@ p {
     .nav-links {
         flex-direction: column;
         width: 100%;
-        height: 85vh;
+        height: 90vh;
         justify-content: space-evenly;
         background-color: rgb(97, 22, 218);
         transition: all 0.3s ease;
@@ -159,7 +159,7 @@ p {
     .toggle.nav-links {
         flex-direction: column;
         width: 100%;
-        height: 85vh;
+        height: 90vh;
         justify-content: space-around;
         background-color: rgb(31, 6, 59);
         margin-top: 100px;
