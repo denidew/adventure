@@ -177,6 +177,10 @@ p {
     color: whitesmoke;
 }
 
+.explore {
+    position: relative;
+}
+
 .explore .title {
     margin-bottom: 50px;
     margin-top: 120px;
@@ -211,26 +215,47 @@ p {
     text-align: center;
 }
 
+.explo_ctn {
+    position: absolute;
+    padding: 8px 15px;
+    background-color: rgb(240, 44, 106);
+    border-radius: 30px;
+    color: whitesmoke;
+    top: 70%;
+    left: 45%;
+    transition: all 0.3s ease;
+}
+
+.explo_ctn:hover {
+    background-color: rgb(243, 160, 88);
+    transform: scale(1.1);
+}
+
 @media only screen and (max-width:992px) {
     .nav-links li {
         margin: 0px 20px;
     }
+
     .nav-links li:last-child {
         margin-left: 20px;
     }
+
     .text {
         padding-top: 120px;
     }
+
     .jumbotron h1 {
         font-size: 35px;
         color: whitesmoke;
     }
+
     .jumbotron h3 {
         font-size: 12px;
         color: whitesmoke;
         font-weight: 400;
         letter-spacing: 2px;
     }
+
     .jumbotron h4 {
         font-size: 14px;
         color: whitesmoke;
@@ -238,28 +263,32 @@ p {
         margin-top: -5px;
         margin-bottom: 35px;
     }
+
     .ctn {
         padding: 8px 15px;
         background-color: rgb(240, 44, 106);
         border-radius: 30px;
         color: whitesmoke;
     }
+
     .ctn:hover {
         background-color: rgb(243, 160, 88);
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:576px) {
     .navbar {
         padding: 0px;
         color: rgb(255, 255, 255);
         background-color: rgb(218, 91, 22);
     }
+
     .logo {
         position: absolute;
         top: 30px;
         left: 30px;
     }
+
     .nav-links {
         flex-direction: column;
         width: 100%;
@@ -270,6 +299,7 @@ p {
         margin-top: -1000px;
         z-index: 100;
     }
+
     .toggle.nav-links {
         flex-direction: column;
         width: 100%;
@@ -279,18 +309,22 @@ p {
         margin-top: 100px;
         z-index: 100;
     }
+
     .nav-links li {
         font-size: 20px;
         margin-bottom: -250px;
         margin-top: -150px;
     }
+
     .nav-links li:last-child {
         margin: 10px auto;
         margin-top: -150px;
     }
+
     .nav-links li a {
         color: rgb(255, 255, 255);
     }
+
     .humberger-menu {
         display: block;
         position: absolute;
@@ -301,6 +335,7 @@ p {
         cursor: pointer;
         z-index: 101;
     }
+
     .humberger-menu .ham {
         width: 100%;
         height: 3px;
@@ -309,30 +344,37 @@ p {
         border-radius: 20px;
         transition: all 0.3s;
     }
+
     .humberger-menu .ham.ham1.tog {
         transform: rotateZ(-45deg) translate(3px, 4px);
         margin-top: 8px;
     }
+
     .humberger-menu .ham.ham2.tog {
         display: none;
     }
+
     .humberger-menu .ham.ham3.tog {
         transform: rotateZ(45deg) translate(-1px, -8px);
         margin-top: 5px;
     }
+
     .text {
         padding-top: 200px;
     }
+
     .jumbotron h1 {
         font-size: 35px;
         color: whitesmoke;
     }
+
     .jumbotron h3 {
         font-size: 12px;
         color: whitesmoke;
         font-weight: 400;
         letter-spacing: 2px;
     }
+
     .jumbotron h4 {
         font-size: 14px;
         color: whitesmoke;
@@ -340,23 +382,61 @@ p {
         margin-top: -5px;
         margin-bottom: 50px;
     }
+
     .ctn {
         padding: 8px 15px;
         background-color: rgb(240, 44, 106);
         border-radius: 30px;
         color: whitesmoke;
     }
+
     .ctn:hover {
         background-color: rgb(243, 160, 88);
     }
+
     section {
         width: 100%;
         text-align: center;
     }
+
     .row {
         display: block;
     }
+
     .row .col {
         margin-bottom: 30px;
     }
+
+    .explore_text {
+        font-size: 35px;
+    }
+
+    .explore_text {
+        color: whitesmoke;
+        font-size: 30px;
+        text-align: left;
+        padding-top: 10vh;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    .explore_text2 {
+        color: whitesmoke;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: start;
+    }
+
+    .explo_ctn {
+        position: absolute;
+        padding: 8px 15px;
+        background-color: rgb(240, 44, 106);
+        border-radius: 30px;
+        color: whitesmoke;
+        top: 500px;
+        left: 35%;
+        transition: all 0.3s ease;
+    }
+
 }
